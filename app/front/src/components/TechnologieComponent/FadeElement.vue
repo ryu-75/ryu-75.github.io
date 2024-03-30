@@ -1,0 +1,83 @@
+<template>
+    <div class="flex-row justify-center">
+        <div class="grid grid-rows-2 grid-flow-col">
+            <div class="flex justify-center mt-12">
+                <img src="./../../assets/react-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            </div>
+            <div class="flex justify-center mt-12">
+                <img src="./../../assets/nestjs-svgrepo-com.svg" alt="nestjs-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            </div>          
+            <div class="flex justify-center mt-12">
+                <img src="./../../assets/html-5-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            </div>            
+            <div class="flex justify-center mt-16">
+                <img src="./../../assets/css-3-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            </div>            
+            <div class="flex justify-center mt-12">
+                <img src="./../../assets/docker-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            </div>            
+            <div class="flex justify-center mt-12">
+                <img src="./../../assets/linux-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            </div>
+            <div class="flex justify-center mt-14">
+                <img src="./../../assets/cpp3-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            </div>
+            <div class="flex justify-center mt-16">
+                <img src="./../../assets/typescript-official-svgrepo-com.svg" alt="react-svgrepo-com" class="h-36 w-36 fade-icon"/>
+            </div>
+            <div class="flex justify-center mt-16">
+                <img src="./../../assets/github-svgrepo-com.svg" alt="react-svgrepo-com" class="h-36 w-36 fade-icon"/>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script lang="tsx">
+    export default  {
+        data() {
+            return {
+                fadeInElement: []
+            };
+        },
+        mounted() {
+            this.fadeInElement = Array.from(document.getElementsByClassName('fade-icon'))
+            document.addEventListener('scroll', this.handleScroll)
+        },
+        beforeUnmount() {
+            this.destroyer()
+        },
+        methods: {
+            isElVisible(el) {
+                if (!el)
+                    return false
+                const   rect = el.getBoundingClientRect();
+                const   elTop = rect.top + 100
+                const   elBottom = rect.bottom
+                return elTop < window.innerHeight && elBottom >= 0
+            },
+            handleScroll() {
+                for (let i = 0; i < this.fadeInElement.length; i++) {
+                    const el = this.fadeInElement[i]
+                    if (this.isElVisible(el)) {
+                        el.style.opacity = '1'
+                        el.style.transform = 'scale(1)'
+                        this.fadeInElement.splice(i, 1) // Allow to play the animation only once
+                        i--
+                    }
+                }
+            }
+        },
+        destroyer() {
+            document.removeEventListener('scroll', this.handleScroll);
+        }
+    } 
+</script>
+
+<style>
+    .fade-icon {
+        opacity: 0;
+        transition: 0.3s all ease-out;
+        transform: scale(0.8);
+        display: inline-block;
+    }
+</style>
