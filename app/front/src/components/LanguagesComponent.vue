@@ -1,7 +1,7 @@
 <template>
     <h1 class="flex justify-center">Langues</h1>
     <div class="flex flex-row justify-evenly">
-      <div class="mt-12">
+      <div class="mt-12" ref="french">
         <h4>Français</h4>
         <v-progress-circular
           :model-value="french"
@@ -13,7 +13,7 @@
           {{ french }}
         </v-progress-circular>
       </div>
-      <div class="mt-12">
+      <div class="mt-12" ref="english">
         <h4>Anglais</h4>
         <v-progress-circular
           :model-value="english"
@@ -25,7 +25,7 @@
           {{ english }}
         </v-progress-circular>
       </div>
-      <div class="mt-12">
+      <div class="mt-12" ref="japanese">
         <h4>Japonais</h4>
         <v-progress-circular
           :model-value="japanese"
@@ -58,26 +58,44 @@
       };
     },
     mounted() {
-      this.interval = setInterval(() => {
-        if (this.french === 100 && this.english === 77 && this.japanese === 12) {
-          clearInterval(this.interval); // Arrête l'interval une fois que la valeur spécifique est atteinte
-          return;
-        }
-        if (this.french < 100) {
-          this.french += 1;
-        }
-        if (this.english < 77) {
-          this.english += 1;
-        }
-        if (this.japanese < 12) {
-          this.japanese += 1;
-        }
-      }, 40);
       window.addEventListener('scroll', this.handleScroll);
     },
     beforeUnmount() {
-      clearInterval(this.interval);
       window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+      elIsVisible(refName) {
+        const el = this.$refs[refName]
+        if (!el)  return false
+        const rect = el.getBoundingClientRect();
+        const top = rect.top + 300
+        const bottom = rect.bottom
+        return top < window.innerHeight && bottom >= 0
+      },
+      handleScroll() {
+        if (this.elIsVisible('french')) this.startAnimation('french', 100)
+        if (this.elIsVisible('english')) this.startAnimation('english', 77)
+        if (this.elIsVisible('japanese')) this.startAnimation('japanese', 12)
+      },
+      startAnimation(target, value) {
+        if (!this.interval) return 
+        const speed = 500
+        const step = Math.ceil(value / speed)
+        this.interval = setInterval(() => {
+          if (this[target] >= value) {
+            clearInterval(this.interval); // Arrête l'interval une fois que la valeur spécifique est atteinte
+            this.interval = null
+            return
+          }
+          this[target] += step
+          if (this[target] > value) {
+            this[target] = value
+          }
+        }, 16);
+      },
+      destroyer() {
+        clearInterval(this.interval)
+      }
     }
   };
-  </script>
+</script>
