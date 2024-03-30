@@ -32,15 +32,19 @@
     </div>
 </template>
 
-<script lang="tsx">
+<script>
     export default  {
         data() {
             return {
-                fadeInElement: []
+                fadeInElement: [],
+                elementVisible: []
             };
         },
         mounted() {
             this.fadeInElement = Array.from(document.getElementsByClassName('fade-icon'))
+            this.fadeInElement.forEach((index) => {
+                this.elementVisible[index] = true
+            })
             document.addEventListener('scroll', this.handleScroll)
         },
         beforeUnmount() {
@@ -53,7 +57,7 @@
                 const   rect = el.getBoundingClientRect();
                 const   elTop = rect.top + 100
                 const   elBottom = rect.bottom
-                return elTop < window.innerHeight && elBottom >= 0
+                return elTop < window.innerHeight && elBottom > 0
             },
             handleScroll() {
                 for (let i = 0; i < this.fadeInElement.length; i++) {
@@ -61,8 +65,14 @@
                     if (this.isElVisible(el)) {
                         el.style.opacity = '1'
                         el.style.transform = 'scale(1)'
-                        this.fadeInElement.splice(i, 1) // Allow to play the animation only once
-                        i--
+                        this.elementVisible[i] = true
+                    } else {
+                        if (this.elementVisible[i]) {
+                            this.fadeInElement = Array.from(document.getElementsByClassName('fade-icon'))
+                            el.style.opacity = '0'
+                            el.style.transform = 'scale(0.7)'
+                            this.elementVisible[i] = false
+                        }
                     }
                 }
             }
