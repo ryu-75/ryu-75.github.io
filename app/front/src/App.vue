@@ -1,85 +1,39 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+  import { RouterLink, RouterView } from 'vue-router'
+  import { ref } from 'vue'
+  import Home from './components/Technologie.vue'
+  import Bienvenue from './components/Bienvenue.vue'
+  import LanguagesComponent from './components/LanguagesComponent.vue'
+  import SoftSkills from './components/SoftSkills.vue'
+  import Education from './components/Education.vue'
+  import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+  <header class="wrapper">
+    <nav class="mt-12">
+      <RouterLink to="/">Bienvenue</RouterLink>
+      <RouterLink to="/about">Home</RouterLink>
+      <RouterLink to="/education">Education</RouterLink>
+    </nav>
   </header>
-
-  <RouterView />
+  <main>
+    <div class="flex justify-center mt-16">
+      <img
+        class="rounded-full border-solid border-4 border-green-600"
+        src="https://picsum.photos/200" 
+        name="avatar" 
+      />
+    </div>
+    <Bienvenue />
+    <Home />
+    <LanguagesComponent />
+    <SoftSkills />
+    <Education />
+  </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+<style>
+  @import url('./assets/main.css');
+  @import url('./assets/app.css');
 </style>
