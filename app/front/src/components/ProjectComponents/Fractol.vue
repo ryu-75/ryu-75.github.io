@@ -1,0 +1,17 @@
+<template>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg shadow-gray-400 bg-white">
+        <h4 class="text-center text-gray-600">Fractol</h4>
+        <img class="w-full" src="https://picsum.photos/2000" alt="Sunset in the mountains">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+        </div>
+        <div class="flex justify-end">
+            <button class="mr-4 bg-blue-500 hover:bg-blue-700 text-white font-bold text-center py-2 px-4 rounded">
+                Read more
+            </button>
+        </div>
+    </div>
+</template>
