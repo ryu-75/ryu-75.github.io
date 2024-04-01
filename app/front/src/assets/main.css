@@ -1,10 +1,9 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  background-image: url('./endless-constellation.svg');
+  background-position: unset;
+  background-repeat: repeat;
 }
 
 a,
@@ -14,3 +13,4 @@ a,
   transition: 0.4s;
   padding: 3px;
 }
+
