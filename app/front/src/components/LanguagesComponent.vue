@@ -1,7 +1,7 @@
 <template>
     <h1 class="flex justify-center">Langues</h1>
     <div class="flex flex-row justify-evenly">
-      <div class="mt-12" ref="french">
+      <div ref="french">
         <h4>Français</h4>
         <v-progress-circular
           :model-value="french"
@@ -13,7 +13,7 @@
           {{ french }}
         </v-progress-circular>
       </div>
-      <div class="mt-12" ref="english">
+      <div ref="english">
         <h4>Anglais</h4>
         <v-progress-circular
           :model-value="english"
@@ -25,7 +25,7 @@
           {{ english }}
         </v-progress-circular>
       </div>
-      <div class="mt-12" ref="japanese">
+      <div ref="japanese">
         <h4>Japonais</h4>
         <v-progress-circular
           :model-value="japanese"
@@ -38,7 +38,7 @@
         </v-progress-circular>
       </div>
     </div>
-    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 m-32">
 </template>
 
 <style scoped>
@@ -68,7 +68,7 @@
         const el = this.$refs[refName]
         if (!el)  return false
         const rect = el.getBoundingClientRect();
-        const top = rect.top + 300
+        const top = rect.top
         const bottom = rect.bottom
         return top < window.innerHeight && bottom >= 0
       },
