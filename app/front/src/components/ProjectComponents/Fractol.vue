@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-sm rounded overflow-hidden shadow-lg shadow-gray-400 bg-white">
-        <h4 class="text-center text-gray-600">Fractol</h4>
+    <div class="max-w-sm rounded-xl overflow-hidden  shadow-inner shadow-gray-400">
+        <h4 class="text-xl sm:text-3xl text-center text-gray-600">Fractol</h4>
         <img class="w-full" src="https://picsum.photos/2000" alt="Sunset in the mountains">
         <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
