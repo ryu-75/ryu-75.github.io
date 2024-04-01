@@ -18,8 +18,8 @@
 </script>
 
 <template>
-    <h2 class="flex justify-center">Projets</h2>
-    <div class="grid grid-cols-2 grid-rows-4 gap-12 m-14">
+    <h2 class="text-center text-4xl sm:text-5xl lg:text-6xl text-wrap">Projets</h2>
+    <div class="grid md:grid-cols-2 md:grid-rows-4 grid-cols-1 gap-12 m-14">
         <div class="flex justify-center">
             <Transcendence />
         </div>

@@ -1,44 +1,50 @@
 <template>
-    <h1 class="flex justify-center">Langues</h1>
-    <div class="flex flex-row justify-evenly">
+    <h1 class="text-center text-4xl sm:text-5xl lg:text-6xl text-wrap">Langues</h1>
+    <div class="flex flex-col justify-center sm:justify-between sm:flex-row gap-12 sm:gap-24">
       <div ref="french">
-        <h4>Français</h4>
-        <v-progress-circular
-          :model-value="french"
-          :rotate="360"
-          :size="100"
-          :width="15"
-          color="primary"
-        >
-          {{ french }}
-        </v-progress-circular>
+        <h4 class="text-xl sm:text-1xl lg:text-4xl text-center">Français</h4>
+        <div class="flex justify-center">
+          <v-progress-circular
+            :model-value="french"
+            :rotate="360"
+            :size="100"
+            :width="15"
+            color="primary"
+          >
+            {{ french }}
+          </v-progress-circular>
+        </div>
       </div>
-      <div ref="english">
-        <h4>Anglais</h4>
-        <v-progress-circular
-          :model-value="english"
-          :rotate="360"
-          :size="100"
-          :width="15"
-          color="secondary"
-        >
-          {{ english }}
-        </v-progress-circular>
+      <div class="flex flex-col justify-center" ref="english">
+        <h4 class="text-xl sm:text-1xl lg:text-4xl text-center">Anglais</h4>
+        <div class="flex justify-center">
+          <v-progress-circular
+            :model-value="english"
+            :rotate="360"
+            :size="100"
+            :width="15"
+            color="secondary"
+          >
+            {{ english }}
+          </v-progress-circular>
+        </div>
       </div>
       <div ref="japanese">
-        <h4>Japonais</h4>
-        <v-progress-circular
-          :model-value="japanese"
-          :rotate="360"
-          :size="100"
-          :width="15"
-          color="warning"
-        >
-          {{ japanese }}
-        </v-progress-circular>
+        <h4 class="text-xl sm:text-1xl lg:text-4xl text-center">Japonais</h4>
+        <div class="flex justify-center">
+          <v-progress-circular
+            :model-value="japanese"
+            :rotate="360"
+            :size="100"
+            :width="15"
+            color="warning"
+          >
+            {{ japanese }}
+          </v-progress-circular>
+        </div>
       </div>
     </div>
-    <    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 m-32">
+    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 m-32">
 </template>
 
 <style scoped>

@@ -1,32 +1,35 @@
 <template>
-    <div class="flex-row justify-center">
-        <div class="grid grid-rows-2 grid-flow-col bg mx-44">
-            <div class="flex justify-center mt-12">
-                <img src="./../../assets/react-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+    <div class="flex-row justify-center sm:mx-44 mx-10 mt-12">
+        <div class="grid grid-rows-5 sm:grid-rows-2 grid-flow-col bg text-center gap-4">
+            <div class="flex justify-center">
+                <img src="./../../assets/react-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>
-            <div class="flex justify-center mt-12">
-                <img src="./../../assets/nestjs-svgrepo-com.svg" alt="nestjs-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/nestjs-svgrepo-com.svg" alt="nestjs-svgrepo-com" class="fade-icon size-32"/>
             </div>          
-            <div class="flex justify-center mt-12">
-                <img src="./../../assets/html-5-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/html-5-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>            
-            <div class="flex justify-center mt-16">
-                <img src="./../../assets/css-3-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/css-3-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>            
-            <div class="flex justify-center mt-12">
-                <img src="./../../assets/docker-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/docker-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>            
-            <div class="flex justify-center mt-12">
-                <img src="./../../assets/linux-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/linux-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>
-            <div class="flex justify-center mt-14">
-                <img src="./../../assets/cpp3-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/cpp3-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>
-            <div class="flex justify-center mt-16">
-                <img src="./../../assets/typescript-official-svgrepo-com.svg" alt="react-svgrepo-com" class="h-36 w-36 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/typescript-official-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>
-            <div class="flex justify-center mt-16">
-                <img src="./../../assets/github-svgrepo-com.svg" alt="react-svgrepo-com" class="h-36 w-36 fade-icon"/>
+            <div class="flex justify-center">
+                <img src="./../../assets/github-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
+            </div>
+            <div class="flex justify-center">
+                <img src="./../../assets/vue-vuejs.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
             </div>
         </div>
     </div>
@@ -89,11 +92,5 @@
         transition: 0.3s all ease-out;
         transform: scale(0.8);
         display: inline-block;
-    }
-    .bg {
-        background-image: url('./../../assets/endless-constellation.svg');
-        background-repeat: repeat;
-        background-position: unset;
-
     }
 </style>
