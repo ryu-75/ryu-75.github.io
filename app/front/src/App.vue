@@ -34,6 +34,7 @@
     <SoftSkills />
     <Education />
     <Projects />
+    <Footer></Footer>
   </main>
 </template>
 
