@@ -1,21 +1,24 @@
 <script setup lang="ts">
   import { RouterLink, RouterView } from 'vue-router'
   import { ref } from 'vue'
-  import Home from './components/Technologie.vue'
+  import Technologie from './components/Technologie.vue'
   import Bienvenue from './components/Bienvenue.vue'
   import LanguagesComponent from './components/LanguagesComponent.vue'
   import SoftSkills from './components/SoftSkills.vue'
   import Education from './components/Education.vue'
   import Footer from './components/Footer.vue'
+  import Projects from './components/Projects.vue'
 </script>
 
 <template>
   <header class="wrapper">
-    <nav class="mt-12">
-      <RouterLink to="/">Bienvenue</RouterLink>
-      <RouterLink to="/about">Home</RouterLink>
-      <RouterLink to="/education">Education</RouterLink>
-    </nav>
+    <div class="pb-10 z-50">
+      <nav class="fixed header_position">
+        <RouterLink to="/">Bienvenue</RouterLink>
+        <RouterLink to="/about">Home</RouterLink>
+        <RouterLink to="/education">Education</RouterLink>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="flex justify-center mt-16">
@@ -26,14 +29,18 @@
       />
     </div>
     <Bienvenue />
-    <Home />
+    <Technologie />
     <LanguagesComponent />
     <SoftSkills />
     <Education />
+    <Projects />
   </main>
 </template>
 
 <style>
   @import url('./assets/main.css');
   @import url('./assets/app.css');
+  .header_position {
+    z-index: 1000;
+  }
 </style>
