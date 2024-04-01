@@ -1,6 +1,6 @@
 <template>
     <div class="flex-row justify-center">
-        <div class="grid grid-rows-2 grid-flow-col">
+        <div class="grid grid-rows-2 grid-flow-col bg mx-44">
             <div class="flex justify-center mt-12">
                 <img src="./../../assets/react-svgrepo-com.svg" alt="react-svgrepo-com" class="h-40 w-40 fade-icon"/>
             </div>
@@ -89,5 +89,11 @@
         transition: 0.3s all ease-out;
         transform: scale(0.8);
         display: inline-block;
+    }
+    .bg {
+        background-image: url('./../../assets/endless-constellation.svg');
+        background-repeat: repeat;
+        background-position: unset;
+
     }
 </style>
