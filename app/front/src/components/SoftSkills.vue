@@ -1,31 +1,32 @@
 
 <template>
-    <h1 class="text-center text-4xl sm:text-5xl lg:text-6xl text-wrap">Compétences interpersonnelles</h1>
-    <div class="grid grid-rows-3 sm:grid-flow-col grid-flow-row">
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Travail en équipe</p>
-        </div>
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Rigoureuse</p>
-        </div>
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Autonome</p>
-        </div>
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Curieuse</p>
-        </div>
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Méthodique</p>
-        </div>
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Créative</p>
-        </div>
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Pensée critique</p>
-        </div>
-        <div class="text-center m-8">
-            <p class="text-2xl sm:text-3xl lg:text-4xl">Empathie</p>
+    <div class="flex flex-col lg:ml-72">
+        <h1 class="text-center sm:text-4xl text-xl text-wrap font-bold">Compétences interpersonnelles</h1>
+        <div class="grid grid-rows-1 grid-cols-2 grid-flow-row" style="margin-top: 3.3rem;">
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Travail en équipe</p>
+            </div>
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Rigoureuse</p>
+            </div>
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Autonome</p>
+            </div>
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Curieuse</p>
+            </div>
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Méthodique</p>
+            </div>
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Créative</p>
+            </div>
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Pensée critique</p>
+            </div>
+            <div class="text-center m-6">
+                <p class="sm:text-2xl text-xl">Empathie</p>
+            </div>
         </div>
     </div>
-    <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 m-32">
-</template>
+ </template>

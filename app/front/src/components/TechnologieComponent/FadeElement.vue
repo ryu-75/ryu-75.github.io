@@ -1,35 +1,35 @@
 <template>
-    <div class="flex-row justify-center sm:mx-44 mx-10 mt-12">
-        <div class="grid grid-rows-5 sm:grid-rows-2 grid-flow-col bg text-center gap-4">
-            <div class="flex justify-center">
-                <img src="./../../assets/react-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
+    <div class="flex justify-center mt-12 mr-12">
+        <div class="grid grid-rows-3 grid-cols-4 sm:grid-rows-2 text-center gap-16">
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/react-svgrepo-com.svg" alt="react-svgrepo-com"/>
             </div>
-            <div class="flex justify-center">
-                <img src="./../../assets/nestjs-svgrepo-com.svg" alt="nestjs-svgrepo-com" class="fade-icon size-32"/>
-            </div>          
-            <div class="flex justify-center">
-                <img src="./../../assets/html-5-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
-            </div>            
-            <div class="flex justify-center">
-                <img src="./../../assets/css-3-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
-            </div>            
-            <div class="flex justify-center">
-                <img src="./../../assets/docker-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
-            </div>            
-            <div class="flex justify-center">
-                <img src="./../../assets/linux-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/nestjs-svgrepo-com.svg" alt="nestjs-svgrepo-com"/>          
             </div>
-            <div class="flex justify-center">
-                <img src="./../../assets/cpp3-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/html-5-svgrepo-com.svg" alt="react-svgrepo-com"/>            
             </div>
-            <div class="flex justify-center">
-                <img src="./../../assets/typescript-official-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/css-3-svgrepo-com.svg" alt="react-svgrepo-com"/>            
             </div>
-            <div class="flex justify-center">
-                <img src="./../../assets/github-svgrepo-com.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/docker-svgrepo-com.svg" alt="react-svgrepo-com"/>            
             </div>
-            <div class="flex justify-center">
-                <img src="./../../assets/vue-vuejs.svg" alt="react-svgrepo-com" class="fade-icon size-32"/>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/linux-svgrepo-com.svg" alt="react-svgrepo-com"/>
+            </div>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/cpp3-svgrepo-com.svg" alt="react-svgrepo-com"/>
+            </div>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/typescript-official-svgrepo-com.svg" alt="react-svgrepo-com"/>
+            </div>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/github-svgrepo-com.svg" alt="react-svgrepo-com"/>
+            </div>
+            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+                <img src="./../../assets/images/vue-vuejs.svg" alt="react-svgrepo-com"/>
             </div>
         </div>
     </div>
@@ -40,7 +40,8 @@
         data() {
             return {
                 fadeInElement: [],
-                elementVisible: []
+                elementVisible: [],
+                logoSize: 0,
             };
         },
         mounted() {
@@ -48,12 +49,21 @@
             this.fadeInElement.forEach((index) => {
                 this.elementVisible[index] = true
             })
+            this.updateLogoSize()
             document.addEventListener('scroll', this.handleScroll)
+            window.addEventListener('resize', this.updateLogoSize)
         },
         beforeUnmount() {
+            window.removeEventListener('resize', this.updateLogoSize)
             this.destroyer()
         },
         methods: {
+            updateLogoSize() {
+                let newSize = window.innerWidth * 0.1
+                if (newSize >= 70)
+                    newSize = 70
+                this.logoSize = newSize
+            },
             isElVisible(el) {
                 if (!el)
                     return false
@@ -92,5 +102,17 @@
         transition: 0.3s all ease-out;
         transform: scale(0.8);
         display: inline-block;
+    }
+
+    .circles1 {
+        background-color: rgba(202, 202, 202, 0.404);
+        border-radius: 50%;
+    }
+    .circles2 {
+        width: 80px;
+        height: 80px;
+        background-color: rgba(223, 220, 220, 0.404);
+        border-radius: 50%;
+        margin-left: 2px;
     }
 </style>

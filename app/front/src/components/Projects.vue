@@ -1,42 +1,40 @@
-<script>
-    import Transcendence from './ProjectComponents/Transcendence.vue'
-    import Ftirc from './ProjectComponents/Ftirc.vue'
+<script lang="ts">
     import AudioFilesAnalyzer from './ProjectComponents/AudioFilesAnalyzer.vue'
-    import Cub3D from './ProjectComponents/Cub3D.vue'
+    import Snake from './ProjectComponents/Snake.vue'
     import PushSwap from './ProjectComponents/PushSwap.vue'
     import Fractol from './ProjectComponents/Fractol.vue'
     export default {
         components: {
-            Transcendence,
-            Ftirc,
             AudioFilesAnalyzer,
-            Cub3D, 
             PushSwap,
+            Snake,
             Fractol
         },
+        methods: {
+            scrollToProject() {
+                this.$emit('scroll-to-project', 'projects');
+            }
+        }
     }
 </script>
 
 <template>
-    <h2 class="text-center text-4xl sm:text-5xl lg:text-6xl text-wrap">Projets</h2>
-    <div class="grid md:grid-cols-2 md:grid-rows-4 grid-cols-1 gap-12 m-14">
-        <div class="flex justify-center">
-            <Transcendence />
+    <h2 class="sm:text-4xl md:text-5xl text-wrap md:text-no-wrap text-3xl font-bold text-center mt-20">Projets</h2>
+    <div class="flex justify-center">
+        <span class="separator"></span>
+    </div>
+    <div class="grid grid-cols-1 gap-12 m-14">
+        <div>
+            <AudioFilesAnalyzer />  
         </div>
-        <div class="flex justify-center">
-            <Ftirc />
-        </div>
-        <div class="flex justify-center">
-            <AudioFilesAnalyzer />
-        </div>        
-        <div class="flex justify-center">
-            <Cub3D />
-        </div>
-        <div class="flex justify-center">
+        <div>
             <PushSwap />
         </div>
-        <div class="flex justify-center">
-            <Fractol />
+        <div>
+            <Fractol /> 
         </div>
+        <div>   
+            <Snake />
+        </div>   
     </div>
 </template>
