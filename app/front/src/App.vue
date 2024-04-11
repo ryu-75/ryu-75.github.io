@@ -1,6 +1,4 @@
 <script setup lang="ts">
-  import { RouterLink, RouterView } from 'vue-router'
-  import { ref } from 'vue'
   import Technologie from './components/Technologie.vue'
   import Bienvenue from './components/Bienvenue.vue'
   import LanguagesComponent from './components/LanguagesComponent.vue'
@@ -104,7 +102,7 @@
 </style>
 
 <script lang="ts">
-  import { Reveal, Slide } from 'vue3-burger-menu'
+  import { Slide } from 'vue3-burger-menu'
     export default {
       computed: {
         isLargeScreen() {
