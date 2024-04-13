@@ -1,23 +1,41 @@
 <template>
     <div v-if="isLargeScreen" class="flex flex-col md:flex-row w-auto justify-between h-auto">
-        <div class="grid grid-cols-2 mt-20">
-            <div class="">
+        <div class="flex flex-row justify-between mt-20">
+            <div class="flex flex-col justify-center">
                 <div class="border-solid border-slate-600">
-                    <h4 class="text-center lg:text-4xl text-3xl">Snake</h4>
-                    <div class="flex justify-center">
+                    <p class="text-center font-bold text-2xl xl:text-4xl">Snake</p>
+                    <div class="flex justify-center mt-6">
                         <span class="separator"></span>
                     </div>
-                    <p class="text-xl m-12">Cet outil a pour objectif d'analyser un ou plusieurs fichiers audio afin d'extraire leur fréquence fondamentale et de déterminer la note correspondante dans la bonne octave.<br><br>
-                        Une fois la bonne note identifiée, chaque fichier est renommé avec la note correspondante ajoutée à la fin de leur nom.</p>
+                    <p class="text-md xl:text-lg m-12 text-gray-600">
+                        Voici mon tout premier jeu vidéo rétro codé en JavaScript. J'ai utilisé SCSS pour prétraiter mon CSS et avoir un meilleur contrôle sur le style global de la page. <br><br>En ce qui concerne la bibliothèque JavaScript, j'ai utilisé la plus célèbre : JQuery.<br><br>
+                        De plus, le jeu est responsive, ce qui signifie qu'il est jouable aussi bien sur PC que sur smartphone.</p>
+                    <div class="flex flex-row justify-evenly">
+                        <div class="skills mt-4">
+                            <span class="font-bold text-gray-700"><span class="text-black"># </span>Javascript</span>
+                        </div>
+                        <div class="skills mt-4">
+                            <span class="font-bold text-gray-700"><span class="text-black"># </span>Sass</span>
+                        </div>
+                        <div class="skills mt-4">
+                            <span class="font-bold text-gray-700"><span class="text-black"># </span>Node</span>
+                        </div>
+                        <div class="skills mt-4">
+                            <span class="font-bold text-gray-700"><span class="text-black"># </span>JQuery</span>
+                        </div>
+                        <div class="skills mt-4">
+                            <span class="font-bold text-gray-700"><span class="text-black"># </span>HTML</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex justify-evenly">
+                <div class="flex justify-evenly mt-12">
                     <a href="https://github.com/ryu-75/snakegame" target="github">
                         <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="size-20" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
+                            <img class="size-12 xl:size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
                         </button>
                     </a>
                     <a href="https://ryu-75.github.io/snakegame/">
-                        <img class="xl:size-20 size-16" src="./../../assets/images/game-svgrepo-com.svg" alt="">
+                        <img class="size-14 xl:size-16" src="./../../assets/images/game-svgrepo-com.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -36,19 +54,37 @@
             </video>
         </div>
         <div class="grid grid-cols-1 m-6">
-            <h5 class="pb-4">Snake</h5>
+            <p class="font-bold text-2xl xl:text-4xl pb-4">Snake</p>
             <details class="open:bg-transparent p-2 rounded-lg" close>
                 <summary class="pb-4">En savoir plus</summary>
-                <p class="text-lg">Cet outil a pour objectif d'analyser un ou plusieurs fichiers audio afin d'extraire leur fréquence fondamentale et de déterminer la note correspondante dans la bonne octave.</p>
-                <p class="text-lg">Une fois la bonne note identifiée, chaque fichier est renommé avec la note correspondante ajoutée à la fin de leur nom.</p>
+                <p class="text-md md:text-xl text-gray-600">
+                    Voici mon tout premier jeu vidéo rétro codé en JavaScript. J'ai utilisé SCSS pour prétraiter mon CSS et avoir un meilleur contrôle sur le style global de la page. En ce qui concerne la bibliothèque JavaScript, j'ai utilisé la plus célèbre : JQuery.
+                    De plus, le jeu est responsive, ce qui signifie qu'il est jouable aussi bien sur PC que sur smartphone.</p>
+                <div class="flex flex-col sm:flex-row justify-evenly mt-12 text-center">
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Javascript</span>
+                    </div>
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Sass</span>
+                    </div>
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Node</span>
+                    </div>
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>JQuery</span>
+                    </div>
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>HTML</span>
+                    </div>
+                </div>
                 <div class="flex justify-evenly mt-12">
                     <a href="https://github.com/ryu-75/snakegame">
                         <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="md:size-16 size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="github">
+                            <img class="size-12" src="./../../assets/images/github-142-svgrepo-com.svg" alt="github">
                         </button>
                     </a>
                     <a href="https://ryu-75.github.io/snakegame/">
-                        <img class="md:size-16 size-14" src="./../../assets/images/game-svgrepo-com.svg" alt="play">
+                        <img class="size-14" src="./../../assets/images/game-svgrepo-com.svg" alt="play">
                     </a>
                 </div>
             </details>

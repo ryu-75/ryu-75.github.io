@@ -1,19 +1,32 @@
 <template>
     <div v-if="isLargeScreen" class="flex flex-col md:flex-row justify-between">
-        <div class="grid grid-cols-2 mt-20">
-            <div class="">
-                <div class="border-solid border-slate-600">
-                    <h4 class="text-center lg:text-4xl text-3xl">Push Swap</h4>
-                    <div class="flex justify-center">
-                        <span class="separator"></span>
-                    </div>
-                    <p class="text-xl m-12">Cet outil a pour objectif d'analyser un ou plusieurs fichiers audio afin d'extraire leur fréquence fondamentale et de déterminer la note correspondante dans la bonne octave.<br><br>
-                        Une fois la bonne note identifiée, chaque fichier est renommé avec la note correspondante ajoutée à la fin de leur nom.</p>
+        <div class="flex flex-row justify-between mt-20">
+            <div class="flex flex-col justify-center">
+                <p class="text-center font-bold text-2xl xl:text-4xl">Push Swap</p>
+                <div class="flex justify-center mt-6">
+                    <span class="separator"></span>
                 </div>
-                <div class="flex justify-center">
+                <p class="text-md xl:text-lg m-12 text-gray-600">Ce projet est une implémentation de l'algorithme de tri par base (Radix sort) pour résoudre la tâche de trier une liste aléatoire d'entiers en utilisant deux piles et un ensemble limité d'opérations.<br><br>
+                L'objectif principal est de minimiser le nombre d'opérations nécessaires pour trier la pile tout en respectant des règles et des contraintes spécifiques décrites dans la description du projet.</p>
+                <div class="flex flex-row justify-evenly">
+                    <div class="skills">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>C</span>
+                    </div>
+                    <div class="skills">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Makefile</span>
+                    </div>
+                    <div class="skills">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Algorithme</span>
+                    </div>
+                    <div class="skills">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Radix</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-12">
                     <a href="https://github.com/ryu-75/Push_swap">
                         <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="size-20" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
+                            <img class="size-12 xl:size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
                         </button>
                     </a>
                 </div>
@@ -33,11 +46,26 @@
             </video>
         </div>
         <div class="grid grid-cols-1 m-6">
-            <h5 class="pb-4">Push Swap</h5>
+            <h5 class="pb-4 font-bold">Push Swap</h5>
             <details class="open:bg-transparent p-2 rounded-lg" close>
                 <summary class="pb-4">En savoir plus</summary>
-                <p class="text-lg">Cet outil a pour objectif d'analyser un ou plusieurs fichiers audio afin d'extraire leur fréquence fondamentale et de déterminer la note correspondante dans la bonne octave.</p>
-                <p class="text-lg">Une fois la bonne note identifiée, chaque fichier est renommé avec la note correspondante ajoutée à la fin de leur nom.</p>
+                <p class="text-md md:text-xl text-gray-600">Ce projet est une implémentation de l'algorithme de tri par base (Radix sort) pour résoudre la tâche de trier une liste aléatoire d'entiers en utilisant deux piles et un ensemble limité d'opérations.</p><br>
+                <p class="text-md md:text-xl text-gray-600">L'objectif principal est de minimiser le nombre d'opérations nécessaires pour trier la pile tout en respectant des règles et des contraintes spécifiques décrites dans la description du projet.</p>
+                <div class="flex flex-col sm:flex-row justify-evenly mt-12 text-center">
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>C</span>
+                    </div>
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Makefile</span>
+                    </div>
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Algorithme</span>
+                    </div>
+                    <div class="skills mt-4">
+                        <span class="font-bold text-gray-700"><span class="text-black"># </span>Radix</span>
+                    </div>
+                </div>
+
                 <div class="flex justify-center mt-12">
                     <a href="https://github.com/ryu-75/Push_swap">
                         <button type="button" class="flex justify-center rounded-full shadow-lg">
