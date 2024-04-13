@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import Technologie from './components/Technologie.vue'
+  import About from './components/About.vue'
   import Bienvenue from './components/Bienvenue.vue'
   import LanguagesComponent from './components/LanguagesComponent.vue'
   import Education from './components/Education.vue'
@@ -45,7 +45,7 @@
     </section>
     <section>
       <a id="about" class="text-black" @scroll-to-section="scrollToSection">
-        <Technologie @scroll-to-project="scrollToProject" />
+        <About @scroll-to-project="scrollToProject" />
       </a>
     </section>  
     <section>
@@ -137,4 +137,4 @@
           }
       }
     }
-</script>
+</script>./components/About.vue

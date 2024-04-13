@@ -1,21 +1,3 @@
-<script>
-    import FadeElement from './TechnologieComponent/FadeElement.vue'
-
-    export default {
-        components: {
-            FadeElement
-        },
-        methods: {
-            scrollToTechnologie() {
-                this.$emit('scroll-to-section', 'technologie'); // Émet un événement avec l'ID de la section "Technologie"
-            },
-            scrollToProject() {
-                this.$emit('scroll-to-project', 'projects'); // Émet un événement avec l'ID de la section "Technologie"
-            }
-        }
-    }
-</script>
-
 <template>
     <div class="flex flex-col h-full mt-10">
         <div class="flex flex-col justify-center">
@@ -73,4 +55,22 @@
         color: rgba(175, 175, 175, 0.20);
     }
 </style>
+
+<script>
+    import FadeElement from './TechnologieComponent/FadeElement.vue'
+
+    export default {
+        components: {
+            FadeElement
+        },
+        methods: {
+            scrollToTechnologie() {
+                this.$emit('scroll-to-section', 'about'); // Émet un événement avec l'ID de la section "Technologie"
+            },
+            scrollToProject() {
+                this.$emit('scroll-to-project', 'projects'); // Émet un événement avec l'ID de la section "Technologie"
+            }
+        }
+    }
+</script>
 
