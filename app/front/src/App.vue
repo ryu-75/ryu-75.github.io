@@ -9,16 +9,10 @@
 </script>
 
 <template>
-  <header>
-    <div v-if="isLargeScreen" class="md:w-screen md:fixed relative z-50 header-shadow">
-      <nav class="flex justify-between h-20" style="background-color: azure;">
-        <div class="flex flex-row gap-4">
-          <a href="#about" type="button">
-            <img class="size-16 mt-2 ml-4 border-solid border-black p-2 rounded-full" src="./assets/images/luffy_gear5.jpeg" alt="luffy" />
-          </a>
-          <p class="text-black font-bold mt-2 ml-4 md:visible invisible">Sasha LORION</p>
-        </div>
-        <div class="mt-2 mr-8 ">
+  <header class="flex justify-center">
+    <div v-if="isLargeScreen" class="flex justify-center rounded-b-full md:w-200 md:fixed relative z-50 header-shadow">
+      <nav class="flex justify-center h-20 rounded-b-full bg-gray-100">
+        <div class="mt-2 mr-8 ml-8">
           <a class="text-black font-bold p-4" href="#about">À propos</a>
           <a class="text-black font-bold p-4" href="#education">Formations</a>
           <a class="text-black font-bold p-4" href="#projects">Projets</a>
@@ -27,7 +21,7 @@
       </nav>
     </div>
 
-    <div v-else class="z-50 p-12 header-shadow bg-white">
+    <div v-else>
       <Slide 
         width="600"
         noOverlay 
@@ -99,6 +93,20 @@
     background-size: auto;
     box-shadow: 0px 4px 40px 6px rgba(0, 0, 0, 0.6);
   }
+  @font-face {
+        font-family: 'Sephir';
+        src: 
+            local('Sephir'),
+            url('./fonts/Sephir-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'Vogue';
+        src: url('./../assets/font/vogue/Vogue.ttf');
+    }
+    p {
+        font-family: 'Sephir', sans-serif;
+        letter-spacing: 0.2rem;
+    }
 </style>
 
 <script lang="ts">
