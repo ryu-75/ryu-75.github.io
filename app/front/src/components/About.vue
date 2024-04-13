@@ -56,7 +56,7 @@
     }
 </style>
 
-<script>
+<script lang="ts">
     import FadeElement from './TechnologieComponent/FadeElement.vue'
 
     export default {

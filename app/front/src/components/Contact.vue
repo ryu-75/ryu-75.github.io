@@ -47,7 +47,7 @@
     }
 </script> -->
 
-<script>
+<script lang="ts">
   const WEB3FORMS_ACCESS_KEY = "8ace5ac4-bd2e-4c4a-bb24-ff6e80cf0485"
 
   export default {
