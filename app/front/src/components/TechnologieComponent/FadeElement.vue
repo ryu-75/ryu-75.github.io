@@ -1,34 +1,34 @@
 <template>
     <div class="flex justify-center mt-12 mr-12">
         <div class="grid grid-rows-3 grid-cols-4 sm:grid-rows-2 text-center gap-16">
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/react-svgrepo-com.svg" alt="react-svgrepo-com"/>
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/nestjs-svgrepo-com.svg" alt="nestjs-svgrepo-com"/>          
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/html-5-svgrepo-com.svg" alt="react-svgrepo-com"/>            
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/css-3-svgrepo-com.svg" alt="react-svgrepo-com"/>            
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/docker-svgrepo-com.svg" alt="react-svgrepo-com"/>            
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/linux-svgrepo-com.svg" alt="react-svgrepo-com"/>
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/cpp3-svgrepo-com.svg" alt="react-svgrepo-com"/>
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/typescript-official-svgrepo-com.svg" alt="react-svgrepo-com"/>
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/github-svgrepo-com.svg" alt="react-svgrepo-com"/>
             </div>
-            <div :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
+            <div class="fade-icon" :style="{ width: logoSize + 'px', height: logoSize + 'px' }">
                 <img src="./../../assets/images/vue-vuejs.svg" alt="react-svgrepo-com"/>
             </div>
         </div>

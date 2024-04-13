@@ -1,31 +1,34 @@
 
 <template>
     <div class="flex flex-col lg:ml-72">
-        <h1 class="text-center sm:text-4xl text-xl text-wrap font-bold">Compétences interpersonnelles</h1>
+        <h1 class="text-center sm:text-3xl text-xl text-wrap font-bold" style="font-family: sephir, sans-serif;">Compétences interpersonnelles</h1>
+        <div class="flex justify-center">
+            <span class="separator"></span>
+        </div>
         <div class="grid grid-rows-1 grid-cols-2 grid-flow-row" style="margin-top: 3.3rem;">
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Travail en équipe</p>
+                <p class="text-lg md:text-xl text-gray-600 ">Travail en équipe</p>
             </div>
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Rigoureuse</p>
+                <p class="text-lg  md:text-xl text-gray-600 ">Rigoureuse</p>
             </div>
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Autonome</p>
+                <p class="text-lg  md:text-xl text-gray-600 ">Autonome</p>
             </div>
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Curieuse</p>
+                <p class="text-lg md:text-xl text-gray-600 ">Curieuse</p>
             </div>
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Méthodique</p>
+                <p class="text-lg md:text-xl text-gray-600 ">Méthodique</p>
             </div>
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Créative</p>
+                <p class="text-lg md:text-xl text-gray-600 ">Créative</p>
             </div>
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Pensée critique</p>
+                <p class="text-lg md:text-xl text-gray-600 ">Pensée critique</p>
             </div>
             <div class="text-center m-6">
-                <p class="sm:text-2xl text-xl">Empathie</p>
+                <p class="text-lg md:text-xl text-gray-600 ">Empathie</p>
             </div>
         </div>
     </div>

@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <h2 class="sm:text-4xl md:text-5xl text-wrap md:text-no-wrap text-3xl font-bold text-center mt-20">Projets</h2>
+    <h2 class="sm:text-4xl md:text-5xl text-wrap md:text-no-wrap text-3xl font-bold text-center mt-20 title">Projets</h2>
     <div class="flex justify-center">
         <span class="separator"></span>
     </div>

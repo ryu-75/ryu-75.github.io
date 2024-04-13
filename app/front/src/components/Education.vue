@@ -7,7 +7,7 @@
         <div class="lg:ml-24 md:p-16 sm:mx-24 mx-8">
             <h3 class="text-center text-3xl md:text-4xl font-bold ">École 42</h3>
             <div class="flex justify-center">
-                <span class="education-bar"></span>
+                <span class="separator"></span>
             </div>
             <div class="flex justify-between mt-12">
                 <p class="text-xl text-gray-600 font-medium">Développement d'application</p>
@@ -43,7 +43,7 @@
         <div class="lg:ml-24 md:p-16 sm:mx-24 mx-8 pt-20">
             <h3 class="text-center text-3xl md:text-4xl font-bold">ISART Digital</h3>
             <div class="flex justify-center">
-                <span class="education-bar"></span>
+                <span class="separator"></span>
             </div>
             <div class="flex justify-between mt-12">
                 <p class="text-xl text-gray-600 font-medium">Music & Sound Design</p>
