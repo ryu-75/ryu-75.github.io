@@ -56,16 +56,15 @@
     }
 </style>
 
-<script lang="js">
-    import FadeElement from './TechnologieComponent/FadeElement.vue'
-
+<script>
+    import { defineAsyncComponent } from 'vue';
     export default {
         components: {
-            FadeElement
+            FadeElement: defineAsyncComponent(() => import('@/components/TechnologieComponent/FadeElement.vue'))
         },
         methods: {
             scrollToTechnologie() {
-                this.$emit('scroll-to-section', 'about'); // Émet un événement avec l'ID de la section "Technologie"
+                this.$emit('scroll-to-section', '/'); // Émet un événement avec l'ID de la section "Technologie"
             },
             scrollToProject() {
                 this.$emit('scroll-to-project', 'projects'); // Émet un événement avec l'ID de la section "Technologie"

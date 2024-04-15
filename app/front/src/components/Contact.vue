@@ -15,7 +15,7 @@
                   <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-4 rtl:peer-focus:translate-x-10 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">Prénom <span class="text-red-600">*</span></label>
               </div>
               <div class="relative z-0 w-full mb-12 group border rounded-lg pl-4">
-                  <input v-model="last_name" type="text" name="last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                  <input v-model="last_name" type="text" name="last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                   <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-4 rtl:peer-focus:translate-x-10 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">Nom de famille</label>
               </div>
             </div>
@@ -31,7 +31,7 @@
     </div>
 </template>
 
-<script lang="js">
+<script lang="ts">
   const WEB3FORMS_ACCESS_KEY = "8ace5ac4-bd2e-4c4a-bb24-ff6e80cf0485"
 
   export default {
@@ -68,4 +68,4 @@
       },
     },
   };
-  </script>
+</script>

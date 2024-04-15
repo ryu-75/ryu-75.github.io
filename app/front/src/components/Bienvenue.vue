@@ -15,12 +15,11 @@
         </article>
     </div>
 </template>
-
 <style>
     .shadow {
         box-shadow: 0px 20px 20px 2px rgba(11, 125, 25, 0.4);
     }
-    .circle { 
+    .circle {   
         width: 50px;
         height: 120px;
         border-top-left-radius: 20px;
@@ -36,11 +35,11 @@
     }
 </style>
 
-<script lang="js">
+<script>
 export default {
     methods: {
         scrollToTechnologie() {
-            this.$emit('scroll-to-section', 'about'); // Émet un événement avec l'ID de la section "Technologie"
+            this.$emit('scroll-to-technologie', '/'); // Émet un événement avec l'ID de la section "Technologie"
         }
     }
 }

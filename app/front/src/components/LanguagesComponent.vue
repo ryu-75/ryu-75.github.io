@@ -1,7 +1,3 @@
-<script setup lang="js">
-  import SoftSkills from './SoftSkills.vue';
-</script>
-
 <template>
   <div class="grid grid-cols-1 h-full pt-10">
     <div class="flex flex-col">
@@ -86,8 +82,12 @@
   }
 </style>
 
-<script lang="js">
+<script>
+  import { defineAsyncComponent } from 'vue'
   export default {
+    components: {
+      SoftSkills: defineAsyncComponent(() => import('./SoftSkills.vue'))
+    },
     data() {
       return {
         interval: {},
@@ -122,7 +122,7 @@
         const step = Math.ceil(value / speed)
         this.interval = setInterval(() => {
           if (this[target] >= value) {
-            clearInterval(this.interval); // Arrête l'interval une fois que la valeur spécifique est atteinte
+            clearInterval(this.interval);
             this.interval = null
             return
           }

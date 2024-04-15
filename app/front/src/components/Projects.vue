@@ -1,23 +1,3 @@
-<script lang="js">
-    import AudioFilesAnalyzer from './ProjectComponents/AudioFilesAnalyzer.vue'
-    import Snake from './ProjectComponents/Snake.vue'
-    import PushSwap from './ProjectComponents/PushSwap.vue'
-    import Fractol from './ProjectComponents/Fractol.vue'
-    export default {
-        components: {
-            AudioFilesAnalyzer,
-            PushSwap,
-            Snake,
-            Fractol
-        },
-        methods: {
-            scrollToProject() {
-                this.$emit('scroll-to-project', 'projects');
-            }
-        }
-    }
-</script>
-
 <template>
     <h2 class="sm:text-4xl md:text-5xl text-wrap md:text-no-wrap text-3xl font-bold text-center mt-20 title">Projets</h2>
     <div class="flex justify-center">
@@ -38,3 +18,21 @@
         </div>   
     </div>
 </template>
+
+<script>
+    import { defineAsyncComponent } from 'vue'
+
+    export default {
+        components: {
+            AudioFilesAnalyzer: defineAsyncComponent(() => import('./ProjectComponents/AudioFilesAnalyzer.vue')),
+            PushSwap: defineAsyncComponent(() => import('./ProjectComponents/PushSwap.vue')),
+            Snake: defineAsyncComponent(() => import('./ProjectComponents/Snake.vue')),
+            Fractol: defineAsyncComponent(() => import('./ProjectComponents/Fractol.vue'))
+        },
+        methods: {
+            scrollToProject() {
+                this.$emit('scroll-to-project', 'projects');
+            }
+        }
+    };
+</script>
