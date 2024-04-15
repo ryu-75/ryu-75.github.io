@@ -109,7 +109,7 @@
 
 </style>
 
-<script lang="js">
+<script>
 export default {
     name: "VideoPlayer",
     computed: {

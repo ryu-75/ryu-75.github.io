@@ -88,7 +88,7 @@
     }
 </style>
 
-<script lang="js">
+<script lang="typescript">
 export default {
     computed: {
         isLargeScreen() {
