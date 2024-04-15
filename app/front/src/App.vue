@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="js">
   import About from './components/About.vue'
   import Bienvenue from './components/Bienvenue.vue'
   import LanguagesComponent from './components/LanguagesComponent.vue'
@@ -109,7 +109,7 @@
     }
 </style>
 
-<script lang="ts">
+<script lang="js">
   import Slide from "vue3-burger-menu"
     export default {
       computed: {

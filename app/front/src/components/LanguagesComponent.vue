@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="js">
   import SoftSkills from './SoftSkills.vue';
 </script>
 
@@ -86,7 +86,7 @@
   }
 </style>
 
-<script>
+<script lang="js">
   export default {
     data() {
       return {

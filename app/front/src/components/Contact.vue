@@ -30,24 +30,8 @@
         </form>
     </div>
 </template>
-<!-- 
-<script>
-    export default {
-        mounted() {
-            this.onSubmit()
-        },
-        methods: {
-            onSubmit() {
-                this.$refs.form.submit()
-            }
-        },
-        unmounted() {
-            this.onSubmit()
-        }
-    }
-</script> -->
 
-<script lang="ts">
+<script lang="js">
   const WEB3FORMS_ACCESS_KEY = "8ace5ac4-bd2e-4c4a-bb24-ff6e80cf0485"
 
   export default {

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="js">
     import AudioFilesAnalyzer from './ProjectComponents/AudioFilesAnalyzer.vue'
     import Snake from './ProjectComponents/Snake.vue'
     import PushSwap from './ProjectComponents/PushSwap.vue'
