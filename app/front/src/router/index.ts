@@ -3,6 +3,10 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/',
+      component: () => import('@/components/Bienvenue.vue')
+    },
+    {
       path: '/education',
       component: () => import('@/components/Education.vue')
     },
