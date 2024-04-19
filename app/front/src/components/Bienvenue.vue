@@ -6,7 +6,7 @@
                 Je suis ouverte à toute opportunité. 
             </p>
             <div class="flex justify-center md:mt-24 mt-12">
-                <div class="flex justify-center circle" >
+                <div class="flex justify-center circle bg-img">
                     <button type="button" class="animate-bounce bg-transparent" @click="scrollToTechnologie">
                         <img class="h-16" src="./../assets/images/arrow-down-svgrepo-com.svg" alt="">
                     </button>
@@ -28,7 +28,7 @@
         border-bottom-right-radius: 20px;
         border-left: transparent;
         border-right: transparent;
-        box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.50);
+        box-shadow: 0px -2px 6px 1px rgba(175, 175, 175, 0.5) inset;
         border-color: black;
         padding-top: 24px;
         background-color: rgb(253, 254, 255);

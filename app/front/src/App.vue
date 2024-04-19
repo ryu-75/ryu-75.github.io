@@ -74,11 +74,11 @@
         handleMenuClick,
         scrollToTechnologie,
         pdfUrl: './download/Sasha_LORION_CV.pdf',
-        pdfFileName: 'Sasha_LORION_CV.pdf'
+        pdfFileName: 'Sasha_LORION_CV.pdf',
       }
     }
   };
-</script>
+</script>               
 
 <template>
   <header class="flex justify-center shadow-none ">
@@ -105,16 +105,6 @@
         </button>
       </div>
       <DownloadCv :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" />
-        <!-- <a
-          href="./assets/download/Sasha_LORION_CV.pdf"
-          download="Sasha_LORION_CV.pdf"
-          class="text-center p-4 rounded-full bottom-8 right-8 font-semibold bg-yellow-300 text-black md:fixed relative header-shadow"
-        >
-          <div class="flex flex-col align-center m-4">
-            <p class="text-center font-semibold">CV à télécharger</p>
-            <img class="flex justify-center size-8 mt-2" src="./assets/images/download.svg" />
-          </div>
-        </a>     -->
   </div>
 
     <div v-else class="w-full">
@@ -142,18 +132,7 @@
               </li>
             </ul>
           </div>
-          <div class="flex justify-center pt-16">
-            <a
-              href="./assets/download/Sasha_LORION_CV.pdf"
-              download="Sasha_LORION_CV.pdf"
-              class="flex justify-center align-center text-center rounded-full p-6 relative font-semibold bg-yellow-300  text-black header-shadow"
-            >
-              <div class="flex flex-col align-center">
-                <p class="text-center text-xs font-semibold">CV à télécharger</p>
-                <img class="flex justify-center size-8" src="./assets/images/download.svg" />
-              </div>
-            </a>  
-          </div>
+          <DownloadCv :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" />
         </div>
       </nav>
     </div>
