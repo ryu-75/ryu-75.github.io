@@ -1,3 +1,4 @@
 # Editor-specific files
 .vscode/
 
+package-lock.json
