@@ -1,6 +1,7 @@
 {
-	"root": "./dist",
+	"root": "./app/front/dist",
+	"clean_url" : true,
 	"routes": {
-		"/**": "app/front/index.html"
+		"/**": "index.html"
 	}
 }
