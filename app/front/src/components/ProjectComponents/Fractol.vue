@@ -8,7 +8,7 @@
             </div>
             <div class="flex flex-col justify-center">
                 <p class="text-center font-bold text-2xl xl:text-4xl">Fract-ol</p>
-                <div class="flex justify-center mt-6">
+                <div class="flex justify-center">
                     <span class="separator"></span>
                 </div>
                 <p class="text-md xl:text-lg m-12 text-gray-600">Fract-ol est l'un des premiers projets graphiques de l'école 42. L'objectif était de générer des fractals à partir des nombres complexes.<br><br>
@@ -30,10 +30,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-12">
-                    <a href="https://github.com/ryu-75/fractol_42">
-                        <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="size-12 xl:size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
-                        </button>
+                    <a href="https://github.com/ryu-75/snakegame" target="github" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                        <img class="size-14 xl:size-16" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -69,10 +67,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-12">
-                    <a href="https://github.com/ryu-75/fractol_42">
-                        <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="md:size-16 size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
-                        </button>
+                    <a href="https://github.com/ryu-75/snakegame" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                        <img class="size-12" src="./../../assets/images/github-142-svgrepo-com.svg" alt="github">
                     </a>
                 </div>
             </details>

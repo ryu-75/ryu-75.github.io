@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col lg:ml-72">
-        <h1 class="text-center sm:text-3xl text-xl text-wrap font-bold" style="font-family: sephir, sans-serif;">Compétences interpersonnelles</h1>
+        <h1 class="text-center sm:text-3xl text-2xl text-wrap font-bold" style="font-family: sephir, sans-serif;">Compétences interpersonnelles</h1>
         <div class="flex justify-center">
             <span class="separator"></span>
         </div>

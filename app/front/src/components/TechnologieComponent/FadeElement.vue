@@ -35,7 +35,7 @@
     </div>
 </template>
 
-<script lang="typescript">
+<script>
     export default  {
         data() {
             return {

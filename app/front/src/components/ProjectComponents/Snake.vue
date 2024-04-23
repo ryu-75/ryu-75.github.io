@@ -4,7 +4,7 @@
             <div class="flex flex-col justify-center">
                 <div class="border-solid border-slate-600">
                     <p class="text-center font-bold text-2xl xl:text-4xl">Snake</p>
-                    <div class="flex justify-center mt-6">
+                    <div class="flex justify-center">
                         <span class="separator"></span>
                     </div>
                     <p class="text-md xl:text-lg m-12 text-gray-600">
@@ -29,13 +29,11 @@
                     </div>
                 </div>
                 <div class="flex justify-evenly mt-12">
-                    <a href="https://github.com/ryu-75/snakegame" target="github">
-                        <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="size-12 xl:size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
-                        </button>
+                    <a href="https://github.com/ryu-75/snakegame" target="github" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                        <img class="size-14 xl:size-16" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
                     </a>
-                    <a href="https://ryu-75.github.io/snakegame/">
-                        <img class="size-14 xl:size-16" src="./../../assets/images/game-svgrepo-com.svg" alt="">
+                    <a class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow" href="https://ryu-75.github.io/snakegame/">
+                        <img class="size-14 xl:size-16 p-1" src="./../../assets/images/game-svgrepo-com.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -78,13 +76,11 @@
                     </div>
                 </div>
                 <div class="flex justify-evenly mt-12">
-                    <a href="https://github.com/ryu-75/snakegame">
-                        <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="size-12" src="./../../assets/images/github-142-svgrepo-com.svg" alt="github">
-                        </button>
+                    <a href="https://github.com/ryu-75/snakegame" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                        <img class="size-12" src="./../../assets/images/github-142-svgrepo-com.svg" alt="github">
                     </a>
-                    <a href="https://ryu-75.github.io/snakegame/">
-                        <img class="size-14" src="./../../assets/images/game-svgrepo-com.svg" alt="play">
+                    <a href="https://ryu-75.github.io/snakegame/" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                        <img class="size-12" src="./../../assets/images/game-svgrepo-com.svg" alt="play">
                     </a>
                 </div>
             </details>
@@ -96,6 +92,7 @@
     .bg-blend {
         background-color: rgba(177, 167, 167, 0.15)
     }
+    
 </style>
 
 <script>

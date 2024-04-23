@@ -1,13 +1,13 @@
 <template>
   <div class="grid grid-cols-1 h-full pt-10">
     <div class="flex flex-col">
-      <h1 class="sm:text-4xl md:text-5xl text-wrap md:text-no-wrap text-3xl font-bold text-center">Compétences & Langues</h1>
+      <h1 class="sm:text-4xl md:text-5xl text-wrap md:text-no-wrap text-4xl font-bold text-center">Compétences & Langues</h1>
       <div class="flex justify-center">
         <span class="separator"></span>
       </div>
       <div class="grid lg:grid-cols-3 grid-cols-1 grid-rows-2 lg:grid-rows-1 ">
         <div class="flex flex-col lg:ml-12 pt-12 lg:pt-0">
-          <h1 class="text-center sm:text-3xl text-xl text-wrap font-bold" style="font-family: sephir, sans-serif;">Langues</h1>
+          <h1 class="text-center sm:text-3xl text-2xl text-wrap font-bold" style="font-family: sephir, sans-serif;">Langues</h1>
           <div class="flex justify-center mt-2"> 
             <span class="separator"></span>
           </div>      

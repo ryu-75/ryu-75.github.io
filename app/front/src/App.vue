@@ -16,6 +16,8 @@
     setup() {
       const isLargeScreen = window.innerWidth >= 920;
       const isMenuOpen = ref(false)
+      const isBurgerMenuOpen = ref(false)
+
       onMounted(() => {
         window.addEventListener('resize', handleResize);
       })
@@ -24,12 +26,28 @@
           ? (isMenuOpen.value = false, window.removeEventListener('click', handleClickOutside))
           : (isMenuOpen.value = true, window.addEventListener('click', handleClickOutside))
       }
-
+      const toggleBurgerMenu = () => {
+        isBurgerMenuOpen.value
+         ? (isBurgerMenuOpen.value = false, window.removeEventListener('click', handleClickBurgerOutside))
+          : (isBurgerMenuOpen.value = true, window.addEventListener('click', handleClickBurgerOutside))
+      }
       const handleClickOutside = (e) => {
         if (!e.target.closest('.menu-container')) {
           isMenuOpen.value = false
           e.stopPropagation()
         }
+      }
+
+      const handleClickBurgerOutside = (e) => {
+        if (!e.target.closest('.menu-burger-container')) {
+          isBurgerMenuOpen.value = false
+          e.stopPropagation()
+        }
+      }
+
+      const handleBurgerMenuClick = () => {
+        if (isBurgerMenuOpen.value)
+          toggleBurgerMenu()
       }
 
       const handleMenuClick = () => {
@@ -61,9 +79,15 @@
           'mt-0': isMenuOpen.value,
           '-mt-20': !isMenuOpen.value,
           'menu-open': isMenuOpen.value,
-          'menu-close': !isMenuOpen.value,
+          'menu-close': !isMenuOpen.value
         }
       });
+      const menuBurgerContainerClass = computed(() => {
+        return {
+          'menu-open': isBurgerMenuOpen.value,
+          'menu-close': !isBurgerMenuOpen.value
+        }
+      })
       return { 
         isLargeScreen,
         isMenuOpen,
@@ -72,7 +96,12 @@
         scrollToProject,
         handleClickOutside,
         handleMenuClick,
+        handleBurgerMenuClick,
         scrollToTechnologie,
+        toggleBurgerMenu,
+        menuBurgerContainerClass,
+        handleClickBurgerOutside,
+        isBurgerMenuOpen,
         pdfUrl: './download/Sasha_LORION_CV.pdf',
         pdfFileName: 'Sasha_LORION_CV.pdf',
       }
@@ -107,28 +136,28 @@
       <DownloadCv :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" />
   </div>
 
-    <div v-else class="w-full">
-      <nav class="bg-white border-gray-200">
+    <div v-else class="w-full menu-burger-container fixed z-50" :class="[menuBurgerContainerClass]">
+      <nav class="bg-white border-gray-200" :class="{ 'menu-open': isBurgerMenuOpen }">
         <div class="flex-1 justify-end m-2 ml-6 z-50 bg-white">
-          <button data-collapse-toggle="navbar-default" type="button" class="flex justify-center hover:bg-gray-200 hover:shadow-xl p-2 w-10 h-10 text-sm text-gray-500 rounded-lg lg:hidden" aria-controls="navbar-default" aria-expanded="false">
+          <button data-collapse-toggle="navbar-default" type="button" @click="toggleBurgerMenu" class="flex justify-center hover:bg-gray-200 hover:shadow-xl p-2 w-10 h-10 text-sm text-gray-500 rounded-lg lg:hidden" aria-controls="navbar-default" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
               </svg>
           </button>
-          <div :class="{ 'hidden': !isMenuOpen }" class=" bg-white w-full -ml-2" id="navbar-default">
+          <div class=" bg-white w-full -ml-2" id="navbar-default" :class="!isBurgerMenuOpen ? 'hidden' : 'unhidden'">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border shadow-xl rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0  bg-gray-200">
               <li>
-                <a class="text-gray-800 font-bold p-4" href="/">À propos</a>
+                <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#/">À propos</a>
               </li>
               <li>
-                <a class="text-gray-800 font-bold p-4" href="#education">Formations</a>
+                <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#education">Formations</a>
               </li>
               <li>
-                <a class="text-gray-800 font-bold p-4" href="#projects">Projets</a>
+                <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#projects">Projets</a>
               </li>
               <li>
-                <a class="text-gray-800 font-bold p-4" href="#contact">Contact</a>
+                <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#contact">Contact</a>
               </li>
             </ul>
           </div>

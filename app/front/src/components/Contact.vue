@@ -1,27 +1,27 @@
 <template>
-    <div class="flex flex-col bg-img -mb-6 md:h-min h-full pb-24">
-        <h2 class="font-bold text-1xl text-center">Contact</h2>
+    <div class="flex flex-col bg-img -mb-6 lg:h-min md:h-screen h-full pb-24">
+        <h2 class="md:text-5xl text-wrap md:text-no-wrap text-4xl font-bold text-center mt-20 title">Contact</h2>
         <div class="flex justify-center">
             <span class="separator"></span>
         </div>
-        <div class="flex flex-row justify-around mt-12">
+        <div class="flex lg:flex-row flex-col gap-8 m-8 lg:gap-0 justify-around lg:mt-12">
             <div class="rounded-lg bg-transparent bg-card w-auto h-auto pl-24 pr-24 pb-12">
-                <h4 class="text-center text-1xl font-semibold">Email</h4>
+                <h4 class="text-center md:text-1xl text-xl font-semibold mt-6">Email</h4>
                 <div class="flex justify-center">
                     <span class="separator"></span>
                 </div>
-                <p class="text-center text-2xl mt-20">sasha.lorion@gmail.com</p>
+                <p class="flex justify-center md:text-2xl text-xl mt-20">sasha.lorion@gmail.com</p>
             </div>
-            <div class="rounded-lg bg-transparent  w-auto bg-card h-auto pl-24 pr-24 pb-12">
-                <h4 class="text-center text-1xl font-semibold text-shadow-lg">Réseaux</h4>
+            <div class="flex flex-col rounded-lg bg-transparent w-auto bg-card h-auto">
+                <h4 class="text-center md:text-1xl text-xl font-semibold text-shadow-lg mt-6">Réseaux</h4>
                 <div class="flex justify-center">
                     <span class="separator"></span>
                 </div>
-                <div class="flex flex-row justify-between mt-16">
-                    <a href="https://github.com/ryu-75/"  class="size-16 mr-24 shadow-md rounded-full">
+                <div class="flex flex-row justify-evenly mt-16">
+                    <a href="https://github.com/ryu-75/"  class="size-16 mr-24 ml-12 mb-12 shadow-md rounded-full">
                         <img src="./../assets/images/github-142-svgrepo-com.svg" alt="">
                     </a>
-                    <a href="https://www.linkedin.com/in/sasha-lorion/" class="size-16 shadow-md rounded-full">
+                    <a href="https://www.linkedin.com/in/sasha-lorion/" class="size-16 mr-12 mb-12 shadow-md rounded-full">
                         <img src="./../assets/images/linkedin.svg" alt="" class="rounded-full">
                     </a>
                 </div>

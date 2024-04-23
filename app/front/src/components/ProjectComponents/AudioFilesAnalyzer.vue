@@ -9,7 +9,7 @@
             <!-- <img class="object-cover pt-12" src="./../../assets/images/oscilloscope.png" alt="audio_analyzer" /> -->
             <div class="flex flex-col justify-center">
                 <p class="text-center font-bold text-2xl xl:text-4xl">Analiseur audio</p>
-                <div class="flex justify-center mt-6">
+                <div class="flex justify-center">
                     <span class="separator"></span>
                 </div>
                 <p class="text-gray-600 text-md xl:text-lg m-12">Cet outil a pour objectif d'analyser un ou plusieurs fichiers audio afin d'extraire leur fréquence fondamentale et de déterminer la note correspondante dans la bonne octave.<br><br>
@@ -32,10 +32,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-12">
-                    <a href="https://github.com/ryu-75/audio_analysis">
-                        <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="size-12 xl:size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
-                        </button>
+                    <a href="https://github.com/ryu-75/snakegame" target="github" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                        <img class="size-14 xl:size-16" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -72,10 +70,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-12">
-                    <a href="https://github.com/ryu-75/audio_analysis">
-                        <button type="button" class="flex justify-center rounded-full shadow-lg">
-                            <img class="md:size-16 size-14" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
-                        </button>
+                    <a href="https://github.com/ryu-75/snakegame" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                        <img class="size-12" src="./../../assets/images/github-142-svgrepo-com.svg" alt="github">
                     </a>
                 </div>
             </details>

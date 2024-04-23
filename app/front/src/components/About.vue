@@ -12,8 +12,8 @@
         <div class="lg:ml-44 lg:mr-44 m-14 lg:mt-16">
             <div class="grid lg:grid-cols-3 grid-cols-1 grid-flow-col">
                 <div class="flex flex-col" >
-                    <h5 class="text-center font-bold">À savoir sur moi</h5>
-                    <div class="flex justify-center mt-8">
+                    <p class="text-2xl md:text-xl text-center font-bold">À savoir sur moi</p>
+                    <div class="flex justify-center">
                         <span class="separator"></span>
                     </div>  
                     <p class="text-center lg:text-justify text-lg text-gray-600 mt-8">
@@ -26,8 +26,8 @@
                     </div>
                 </div>
                 <div class="lg:col-start-3 lg:row-start-1 row-start-2 lg:pt-0 pt-24">
-                    <h5 class="text-center font-bold">Connaissances techniques</h5>
-                    <div class="flex justify-center mt-8">
+                    <p class="text-2xl md:text-xl text-center font-bold">Connaissances techniques</p>
+                    <div class="flex justify-center">
                         <span class="separator"></span>
                     </div>  
                     <FadeElement />
@@ -46,6 +46,7 @@
         height: 5px;
         background-color: rgb(69, 157, 240); 
         border-radius: 5px 5px 5px 5px;
+        margin-top: 0.5rem;
     }
     .end-bar {
         border: solid 0.001cm;  
@@ -56,7 +57,7 @@
     }
 </style>
 
-<script>
+<script lang="ts">
     import { defineAsyncComponent } from 'vue';
     export default {
         components: {
