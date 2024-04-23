@@ -17,6 +17,10 @@ const router = createRouter({
     {
       path: '/contact',
       component: () => import('@/components/Contact.vue')
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/'
     }
   ]
 })
