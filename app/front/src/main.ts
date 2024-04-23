@@ -14,9 +14,8 @@ const vuetify = createVuetify({
   directives,
 })
 
-app.use(router)
-app.use(VueRecaptchaPlugin, {
-  v2SiteKey: '6LcU7b0pAAAAAPC6vAoR7EV_-bC9Q1pgTYYRq5cR',
-})
+// app.use(VueRecaptchaPlugin, {
+//   v2SiteKey: '6LcU7b0pAAAAAPC6vAoR7EV_-bC9Q1pgTYYRq5cR',
+// })
 
-app.use(vuetify).mount('#app')
+app.use(vuetify).use(router).mount('#app')
