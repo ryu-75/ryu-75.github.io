@@ -10,18 +10,18 @@
                 <div class="flex justify-center">
                     <span class="separator"></span>
                 </div>
-                <p class="flex justify-center md:text-2xl text-xl mt-20">sasha.lorion@gmail.com</p>
+                <p class="flex justify-center md:text-2xl text-lg mt-10">sasha.lorion@gmail.com</p>
             </div>
-            <div class="flex flex-col rounded-lg bg-transparent w-auto bg-card h-auto">
+            <div class="flex flex-col rounded-lg bg-transparent w-auto bg-card h-auto md:pl-24 md:pr-24">
                 <h4 class="text-center md:text-1xl text-xl font-semibold text-shadow-lg mt-6">Réseaux</h4>
                 <div class="flex justify-center">
                     <span class="separator"></span>
                 </div>
-                <div class="flex flex-row justify-evenly mt-16">
-                    <a href="https://github.com/ryu-75/"  class="size-16 mr-24 ml-12 mb-12 shadow-md rounded-full">
+                <div class="flex flex-row justify-evenly mt-10 mb-10 md:gap-20">
+                    <a href="https://github.com/ryu-75/"  class="size-16 text-center shadow-md rounded-full">
                         <img src="./../assets/images/github-142-svgrepo-com.svg" alt="">
                     </a>
-                    <a href="https://www.linkedin.com/in/sasha-lorion/" class="size-16 mr-12 mb-12 shadow-md rounded-full">
+                    <a href="https://www.linkedin.com/in/sasha-lorion/" class="size-16 shadow-md rounded-full">
                         <img src="./../assets/images/linkedin.svg" alt="" class="rounded-full">
                     </a>
                 </div>

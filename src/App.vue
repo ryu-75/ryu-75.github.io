@@ -102,8 +102,7 @@
         menuBurgerContainerClass,
         handleClickBurgerOutside,
         isBurgerMenuOpen,
-        pdfUrl: './download/Sasha_LORION_CV.pdf',
-        pdfFileName: 'Sasha_LORION_CV.pdf',
+        pdfUrl: './src/assets/download/Sasha_LORION_CV.pdf',
       }
     }
   };
@@ -117,7 +116,7 @@
       :class="[menuContainerClass]"
     >
       <nav class="flex justify-center h-20 rounded-b-full bg-white relative" :class="{ 'menu-open': isMenuOpen}">
-        <div class="mt-2 mr-8 ml-8">
+        <div class="mt-6 mr-8 ml-8">
           <a @click="handleMenuClick" class="text-gray-700 font-bold p-4" href="#/">À propos</a>
           <a @click="handleMenuClick" class="text-gray-700 font-bold p-4" href="#education">Formations</a>
           <a @click="handleMenuClick" class="text-gray-700 font-bold p-4" href="#projects">Projets</a>
@@ -133,35 +132,35 @@
           <img :class="!isMenuOpen ? 'rotate-180' : 'rotate-0'" class="size-6 mt-2" src="./assets/images/arrow-up.svg" alt="arrow-up">
         </button>
       </div>
-      <DownloadCv :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" />
+      <DownloadCv :pdf-url="pdfUrl" />
   </div>
 
-    <div v-else class="w-full menu-burger-container fixed z-50" :class="[menuBurgerContainerClass]">
-      <nav class="bg-white border-gray-200" :class="{ 'menu-open': isBurgerMenuOpen }">
-        <div class="flex-1 justify-end m-2 ml-6 z-50 bg-white">
+    <div v-else class="w-full menu-burger-container relative" :class="[menuBurgerContainerClass]">
+      <nav class="border-gray-200 text-black bg-white" :class="{ 'menu-open': isBurgerMenuOpen }">
+        <div class="flex-1 justify-end m-2 ml-6 z-50">
           <button data-collapse-toggle="navbar-default" type="button" @click="toggleBurgerMenu" class="flex justify-center hover:bg-gray-200 hover:shadow-xl p-2 w-10 h-10 text-sm text-gray-500 rounded-lg lg:hidden" aria-controls="navbar-default" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
               </svg>
           </button>
-          <div class=" bg-white w-full -ml-2" id="navbar-default" :class="!isBurgerMenuOpen ? 'hidden' : 'unhidden'">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border shadow-xl rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0  bg-gray-200">
+          <div class="-ml-4" id="navbar-default" :class="!isBurgerMenuOpen ? 'hidden' : 'unhidden'">
+            <ul class="bg-white font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0">
               <li>
                 <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#/">À propos</a>
               </li>
-              <li>
+              <li class="mt-4">
                 <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#education">Formations</a>
               </li>
-              <li>
+              <li class="mt-4">
                 <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#projects">Projets</a>
               </li>
-              <li>
+              <li class="mt-4">
                 <a @click="handleBurgerMenuClick" class="text-gray-800 font-bold p-4" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
-          <DownloadCv :pdf-url="pdfUrl" :pdf-file-name="pdfFileName" />
+          <DownloadCv :pdf-url="pdfUrl" />
         </div>
       </nav>
     </div>

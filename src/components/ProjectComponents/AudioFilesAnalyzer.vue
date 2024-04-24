@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-12">
-                    <a href="https://github.com/ryu-75/snakegame" target="github" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                    <a href="https://github.com/ryu-75/audio_analysis" target="github" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
                         <img class="size-14 xl:size-16" src="./../../assets/images/github-142-svgrepo-com.svg" alt="">
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-12">
-                    <a href="https://github.com/ryu-75/snakegame" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
+                    <a href="https://github.com/ryu-75/audio_analysis" class="bg-gray-200 hover:bg-gray-300 rounded-full p-2 button-inset-shadow">
                         <img class="size-12" src="./../../assets/images/github-142-svgrepo-com.svg" alt="github">
                     </a>
                 </div>
