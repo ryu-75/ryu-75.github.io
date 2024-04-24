@@ -24,10 +24,10 @@
 
     export default {
         components: {
-            AudioFilesAnalyzer: defineAsyncComponent(() => import('./ProjectComponents/AudioFilesAnalyzer.vue')),
-            PushSwap: defineAsyncComponent(() => import('./ProjectComponents/PushSwap.vue')),
-            Snake: defineAsyncComponent(() => import('./ProjectComponents/Snake.vue')),
-            Fractol: defineAsyncComponent(() => import('./ProjectComponents/Fractol.vue'))
+            AudioFilesAnalyzer: defineAsyncComponent(() => import('./../components/ProjectComponents/AudioFilesAnalyzer.vue')),
+            PushSwap: defineAsyncComponent(() => import('./../components/ProjectComponents/PushSwap.vue')),
+            Snake: defineAsyncComponent(() => import('./../components/ProjectComponents/Snake.vue')),
+            Fractol: defineAsyncComponent(() => import('./../components/ProjectComponents/Fractol.vue'))
         },
         methods: {
             scrollToProject() {

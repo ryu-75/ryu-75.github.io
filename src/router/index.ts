@@ -5,19 +5,19 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: () => import('@/components/Bienvenue.vue')
+      component: () => import('@/views/Bienvenue.vue')
     },
     {
       path: '/education',
-      component: () => import('@/components/Education.vue')
+      component: () => import('@/views/Education.vue')
     },
     {
       path: '/projects',
-      component: () => import('@/components/Projects.vue')
+      component: () => import('@/views/Projects.vue')
     },
     {
       path: '/contact',
-      component: () => import('@/components/Contact.vue')
+      component: () => import('@/views/Contact.vue')
     },
     {
       path: '/:catchAll(.*)',

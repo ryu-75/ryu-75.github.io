@@ -4,13 +4,13 @@
 
   export default {
     components: {
-      About: defineAsyncComponent(() => import('@/components/About.vue')),
-      Bienvenue: defineAsyncComponent(() => import('@/components/Bienvenue.vue')),
+      About: defineAsyncComponent(() => import('@/views/About.vue')),
+      Bienvenue: defineAsyncComponent(() => import('@/views/Bienvenue.vue')),
       LanguagesComponent: defineAsyncComponent(() => import('@/components/LanguagesComponent.vue')),
-      Education: defineAsyncComponent(() => import('@/components/Education.vue')),
+      Education: defineAsyncComponent(() => import('@/views/Education.vue')),
       Footer: defineAsyncComponent(() => import('@/components/Footer.vue')),
-      Contact: defineAsyncComponent(() => import('@/components/Contact.vue')),
-      Projects: defineAsyncComponent(() => import('@/components/Projects.vue')),
+      Contact: defineAsyncComponent(() => import('@/views/Contact.vue')),
+      Projects: defineAsyncComponent(() => import('@/views/Projects.vue')),
       DownloadCv
     },
     setup() {
@@ -204,8 +204,8 @@
 </template>
 
 <style>
-  @import url('./assets/main.css');
-  @import url('./assets/app.css');
+  @import url('./styles/main.css');
+  @import url('./styles/app.css');
   .header_position {
     z-index: 1000;
   }
