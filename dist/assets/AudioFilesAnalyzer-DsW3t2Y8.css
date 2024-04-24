@@ -1,0 +1,1 @@
+.bg-blend{background-color:#b1a7a726}details{overflow:hidden;transition:height .7s ease;height:auto}details>p{overflow:hidden;transition:opacity .7s ease;opacity:0}details[open]{height:auto}details[close]>p{opacity:1}
