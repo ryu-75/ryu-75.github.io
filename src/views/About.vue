@@ -12,13 +12,13 @@
         <div class="lg:ml-44 lg:mr-44 m-14 lg:mt-16">
             <div class="grid lg:grid-cols-3 grid-cols-1 grid-flow-col">
                 <div class="flex flex-col" >
-                    <p class="text-2xl md:text-xl text-center font-bold">À savoir sur moi</p>
+                    <p class="text-2xl md:text-xl text-center font-bold">Qui suis-je ?</p>
                     <div class="flex justify-center">
                         <span class="separator"></span>
                     </div>  
                     <p class="text-center lg:text-justify text-lg text-gray-600 mt-8">
                         Étudiante à l'école 42, j'ai pour objectif de me spécialiser dans le <b>développement d'application web et mobile</b>.<br><br>
-                        Toujours en constante évolution, je me forme quotidiennement de sorte à toujours être au courant et à jour des nouveaux outils.<br><br>
+                        Toujours en constante évolution, je me forme quotidiennement de sorte à toujours être au courant et à jour des nouvelles technologies.<br><br>
                         Je vous invite à jeter un oeil sur mes <b>projets</b> pour en savoir plus.<br>
                     </p>
                     <div class="flex justify-center mt-14">

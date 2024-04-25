@@ -8,7 +8,7 @@
             </div>
             <!-- <img class="object-cover pt-12" src="./../../assets/images/oscilloscope.png" alt="audio_analyzer" /> -->
             <div class="flex flex-col justify-center">
-                <p class="text-center font-bold text-2xl xl:text-4xl">Analiseur audio</p>
+                <p class="text-center font-bold text-2xl xl:text-4xl">Analyseur audio</p>
                 <div class="flex justify-center">
                     <span class="separator"></span>
                 </div>

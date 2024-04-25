@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col mt-24">
-        <h1 class="text-center text-4xl sm:text-5xl lg:text-7xl font-bold">Salut, je suis Sasha</h1>    
+        <h1 class="text-center text-4xl sm:text-5xl lg:text-7xl font-bold">Bienvenue, je suis Sasha</h1>    
         <article class="m-12">
             <p class="text-pretty text-xl text-center text-gray-600">développeuse full-stack junior à la recherche d'une alternance et passionnée par le développement web.<br><br>
                 Je suis ouverte à toute opportunité. 
