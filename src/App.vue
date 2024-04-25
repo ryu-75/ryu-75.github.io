@@ -102,7 +102,7 @@
         menuBurgerContainerClass,
         handleClickBurgerOutside,
         isBurgerMenuOpen,
-        pdfUrl: './src/assets/download/Sasha_LORION_CV.pdf',
+        pdfUrl: './download/Sasha_LORION_CV.pdf',
       }
     }
   };
